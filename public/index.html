@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <script type="module" src="js/main.js" defer></script>
+   <title>Document</title>
+</head>
+
+<body>
+
+   <canvas id="webgl" class="canvas-area"></canvas>
+
+   <div class="control-panel">
+      <div class="form-row">
+         <h4>Источник света</h4>
+         <div class="form-control">
+            <label for="">ОХ</label>
+            <input type="number" value="2" id="light_ox">
+         </div>
+         <div class="form-control">
+            <label for="">ОY</label>
+            <input type="number" value="2" id="light_oy">
+         </div>
+         <div class="form-control">
+            <label for="">ОZ</label>
+            <input type="number" value="2" id="light_oz">
+         </div>
+         <div class="form-control">
+            <label for="">Интенсивность света</label>
+            <select id="light_intensity">
+               <option value="0.1" selected>10%</option>
+               <option value="0.25">25%</option>
+               <option value="0.5">50%</option>
+               <option value="0.75">75%</option>
+               <option value="1">100%</option>
+               <option value="1.5">150%</option>
+               <option value="2">200%</option>
+            </select>
+         </div>
+      </div>
+      <div class="form-row">
+         <h4>Объект</h4>
+         <div class="form-control">
+            <label for="">Повернуть по OX</label>
+            <input type="number" min="0" max="360" value="90" id="rotate_ox">
+         </div>
+         <div class="form-control">
+            <label for="">Повернуть по OY</label>
+            <input type="number" min="0" max="360" value="0" id="rotate_oy">
+         </div>
+         <div class="form-control">
+            <label for="">Повернуть по OZ</label>
+            <input type="number" min="0" max="360" value="0" id="rotate_oz">
+         </div>
+         <div class="form-control">
+            <label for="">Масштаб</label>
+            <select id="scale">
+               <option value="2" selected>0%</option>
+               <option value="1.75">25%</option>
+               <option value="1.5">50%</option>
+               <option value="1">100%</option>
+            </select>
+         </div>
+         <div class="form-control">
+            <label for="">ОХ</label>
+            <input type="number" value="0" id="obj_ox">
+            <label for="">Шаг</label>
+            <input type="number" value="0" step="0.1" id="obj_ox_step">
+         </div>
+         <div class="form-control">
+            <label for="">ОY</label>
+            <input type="number" value="0" id="obj_oy">
+            <label for="">Шаг</label>
+            <input type="number" value="0" step="0.1" id="obj_oy_step">
+         </div>
+         <div class="form-control">
+            <label for="">ОZ</label>
+            <input type="number" value="0" id="obj_oz">
+            <label for="">Шаг</label>
+            <input type="number" value="0" step="0.1" id="obj_oz_step">
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>
